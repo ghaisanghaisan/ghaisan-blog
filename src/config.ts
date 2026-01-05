@@ -27,15 +27,14 @@ export const siteConfig: SiteConfig = {
     // 站点 URL（以斜杠结尾）
     siteURL: "https://twilight.spr-aachen.com/", // 请替换为你的站点 URL 并以斜杠结尾
     // 站点标题
-    title: "Twilight",
+    title: "A Peek into Ghaisan",
     // 站点副标题
-    subtitle: "Blog Template",
+    subtitle: "Blog",
     // 语言配置
     lang: SITE_LANG, // 自动检测的浏览器语言
     // 翻译配置
     translate: {
-        // 启用翻译功能
-        enable: true,
+        enable: false,
         // 翻译服务
         service: "client.edge", // 使用 Edge 浏览器
         // 显示语言选择下拉框
@@ -65,9 +64,9 @@ export const siteConfig: SiteConfig = {
     // 主题色配置
     themeColor: {
         // 主题色的默认色相 (范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345)
-        hue: 255,
+        hue: 215,
         // 对访问者隐藏主题色选择器
-        fixed: false,
+        fixed: true,
     },
     // 默认主题 ("system" 跟随系统 | "light" 浅色 | "dark" 深色)
     defaultTheme: "dark",
@@ -107,10 +106,10 @@ export const siteConfig: SiteConfig = {
                 // 在主页显示文本
                 enable: true,
                 // 主标题
-                title: "Twilight",
+                title: "A Peek into Ghaisan",
                 // 副标题，支持单个字符串或字符串数组
                 subtitle: [
-                    "Illuminate Our Paths",
+                    "What will you find?",
                 ],
                 // 副标题打字机效果
                 typewriter: {
@@ -180,49 +179,7 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
     // 链接配置 (支持多级菜单)
     links: [
-        LinkPreset.Home,
-        LinkPreset.Archive,
-        {
-            name: "Links",
-            url: "/links/",
-            icon: "material-symbols:link",
-            children: [
-                {
-                    name: "GitHub",
-                    url: "https://github.com/Example",
-                    external: true,
-                    icon: "fa6-brands:github",
-                },
-                {
-                    name: "Bilibili",
-                    url: "https://space.bilibili.com/Example",
-                    external: true,
-                    icon: "fa6-brands:bilibili",
-                },
-            ],
-        },
-        {
-            name: "My",
-            url: "/content/",
-            icon: "material-symbols:person",
-            children: [
-                LinkPreset.Projects,
-                LinkPreset.Skills,
-                LinkPreset.Timeline,
-                LinkPreset.Diary,
-                LinkPreset.Albums,
-                LinkPreset.Anime,
-            ],
-        },
-        {
-            name: "About",
-            url: "/content/",
-            icon: "material-symbols:info",
-            children: [
-                LinkPreset.About,
-                LinkPreset.Friends,
-            ],
-        },
+        
     ],
 };
 
@@ -246,18 +203,18 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
             // 组件位置
             position: "top", // 固定在顶部
         },
-        {
-            // 组件类型
-            type: "announcement", // 公告组件
-            // 是否启用该组件
-            enable: true,
-            // 组件所属侧边栏
-            side: "left",
-            // 组件显示顺序 (数字越小越靠前)
-            order: 2,
-            // 组件位置
-            position: "top", // 固定在顶部
-        },
+        // {
+        //     // 组件类型
+        //     type: "announcement", // 公告组件
+        //     // 是否启用该组件
+        //     enable: true,
+        //     // 组件所属侧边栏
+        //     side: "left",
+        //     // 组件显示顺序 (数字越小越靠前)
+        //     order: 2,
+        //     // 组件位置
+        //     position: "top", // 固定在顶部
+        // },
         {
             // 组件类型
             type: "categories", // 分类组件
@@ -341,17 +298,17 @@ export const umamiConfig = {
 // 资料配置
 export const profileConfig: ProfileConfig = {
     // 头像配置 (相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录)
-    avatar: "assets/images/avatar.png",
+    avatar: "assets/images/ghaisangh.jpg",
     // 信息配置
-    name: "Twilight",
+    name: "ghaisanghaisan",
     // 简介配置
-    bio: "Hi",
+    bio: "Disanalah para ksatria berada.",
     // 链接配置
     links: [
         {
             name: "GitHub",
             icon: "fa6-brands:github",
-            url: "https://github.com/Spr-Aachen/Twilight",
+            url: "https://github.com/ghaisanghaisan",
         },
     ],
 };
