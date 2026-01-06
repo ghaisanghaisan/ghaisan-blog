@@ -5,3 +5,10 @@ tags: [Markdown]
 category: Pengantar Teknologi Informasi Militer
 draft: false
 ---
+
+
+
+
+# Berikut adalah poster kami
+
+![Poster](/images/POSTER-PTIM.png)
